@@ -8,26 +8,39 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='header' >
+          <header>
+            <h3>Expense Tracker</h3>
+          </header>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className='name'>
+        <h1>Hello, Vijay Mhaske</h1>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className='ExpensesName'>
+        <div className='T-Budge'>
+          <p>Total Budget</p>
+          <h2>$20,000</h2>
+        </div>
+        <div className='T-Expense'>
+          <p>Total Expense</p>
+          <h2>$12,205</h2>
+        </div>
+        <div className='Remaninig-B'>
+          <p>Remanining Budget</p>
+          <h2>$12,205</h2>
+        </div>
+      </div>
+      
+      <div className='Categaries'>
+        <input type="text" placeholder='Search'/>
+        <button className='active'>All Expenses</button>
+        <button>Food Drinks</button>
+        <button>Groceries</button>
+        <button>Travel</button>
+        <button>Health</button>
+        <button className='add-budget'>Add Budget</button>
+        <button className='Add-Expenses'>Add Expenses</button>
+      </div>
     </>
   )
 }
